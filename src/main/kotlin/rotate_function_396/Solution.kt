@@ -31,9 +31,9 @@ class Solution {
             f0 += (i.index * i.value)
         }
 
-        var max = Int.MIN_VALUE
         var dp: Array<Int> = Array(nums.size) { 0 }
         dp[0] = f0
+        var max = dp[0]
         for (i in 1 until nums.size) {
             dp[i] = dp[i - 1] + sum - nums.size * (nums[nums.size - i])
             max = kotlin.math.max(max, dp[i])
