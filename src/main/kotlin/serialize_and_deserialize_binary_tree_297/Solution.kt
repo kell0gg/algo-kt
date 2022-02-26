@@ -17,7 +17,7 @@ class TreeNode(var `val`: Int) {
 
 class Codec() {
 // serailize 하면?
-// 1, 2, #, #, 3, 4, 5
+// 1, 2, #, #, 3, 4, #, #, 5, #, #
 
 // deserilize 하면?
 // root -> 1
