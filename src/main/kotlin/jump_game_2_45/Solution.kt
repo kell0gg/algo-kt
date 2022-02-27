@@ -14,6 +14,7 @@ class Solution {
         for (i in nums.indices) {
             far = kotlin.math.max(far, i + nums[i])
 
+            // 최대 지점에 도달했을 때, 그 다음 뛸 수 있는 최대로 계산해서 진행
             if (i == currentEnd) {
                 count++
                 currentEnd = far
