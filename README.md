@@ -16,3 +16,9 @@
             }
         })
 ```
+
+### 2차원 배열 초기화
+
+```kotlin
+val reshapeMatrix: Array<IntArray> = Array(r) { i -> IntArray(c) { j -> 0 } }
+```
