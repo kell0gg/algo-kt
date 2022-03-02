@@ -20,3 +20,12 @@
 ```kotlin
 val reshapeMatrix: Array<IntArray> = Array(r) { i -> IntArray(c) { j -> 0 } }
 ```
+
+### kotlin에서 3항 연산자(ternary operator)
+
+- 따로 없어서 if, else 나 when으로 처리해야 함
+
+```kotlin
+var prev = if (i == 0) 0 else tmp[i - 1]
+var next = if (i == flowerbed.size - 1) 0 else tmp[i + 1]
+```
