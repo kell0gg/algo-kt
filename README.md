@@ -29,3 +29,22 @@ val reshapeMatrix: Array<IntArray> = Array(r) { i -> IntArray(c) { j -> 0 } }
 var prev = if (i == 0) 0 else tmp[i - 1]
 var next = if (i == flowerbed.size - 1) 0 else tmp[i + 1]
 ```
+
+### empty list 생성 및 Comparator를 이용한 정렬
+
+```kotlin
+        val reorderLogList: MutableList<ReorderLog> = mutableListOf()
+        reorderLogList.sortWith { a, b ->
+            if (a == b) a.log.compareTo(b.log)
+            else a.log.compareTo(b.log)
+        }      
+```
+
+```kotlin
+        reorderLogList.sortWith(
+            Comparator { a, b ->
+                if (a == b) a.log.compareTo(b.log)
+                else a.log.compareTo(b.log)
+            }
+        )
+```
